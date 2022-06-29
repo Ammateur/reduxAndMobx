@@ -1,8 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useLayoutEffect, useState } from "react";
+import logo from "./logo.svg";
+import "./App.scoped.scss";
 
 function App() {
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    console.log("this is some error");
+  });
+  const str = "is vscode better than webstorm?";
+  useLayoutEffect(() => {
+    console.log(str);
+  });
   return (
     <div className="App">
       <header className="App-header">
