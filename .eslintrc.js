@@ -1,3 +1,4 @@
+const path = require("path");
 module.exports = {
   env: {
     browser: true,
@@ -21,5 +22,13 @@ module.exports = {
   plugins: ["react", "@typescript-eslint"],
   rules: {
     "@typescript-eslint/no-var-requires": 0,
+  },
+  settings: {
+    "import/resolver": {
+      map: [
+        ["@", ["./src"]],
+        ["pages", "./src/pages"],
+      ],
+    },
   },
 };
