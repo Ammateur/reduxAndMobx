@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.scoped.less";
+import "./App.scoped.css";
 import RouterComponent from "@/router";
 function App() {
   return <RouterComponent />;

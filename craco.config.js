@@ -7,6 +7,13 @@ module.exports = {
   plugins: [
     {
       plugin: CracoLessPlugin,
+      options: {
+        lessLoaderOptions: {
+          lessOptions: {
+            javascriptEnabled: true,
+          },
+        },
+      },
     },
     {
       plugin: CracoCssScopedPlugin,
@@ -17,6 +24,7 @@ module.exports = {
   ],
   devServer: {
     setupMiddlewares: mockMiddleware,
+    // onBeforeSetupMiddleware: mockMiddleware,
   },
   webpack: {
     alias: {
