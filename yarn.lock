@@ -3553,6 +3553,11 @@ craco-plugin-scoped-css@^1.1.1:
     babel-plugin-react-scoped-css "^1.1.1"
     scoped-css-loader "^1.0.0"
 
+craco-scoped-less@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npmmirror.com/craco-scoped-less/-/craco-scoped-less-1.0.3.tgz#1e5c74b07940d0706c06fbf01e700ece7a835a0e"
+  integrity sha512-GNZeZh4H5nungFc5Z34c4ffmcWdKic8qyddyhSMb7ISt2m7z8bViblqSr1B9ZnS1w7GJUXDi1CQIirGLYnL2HA==
+
 create-require@^1.1.0:
   version "1.1.1"
   resolved "https://registry.npmmirror.com/create-require/-/create-require-1.1.1.tgz#c1d7e8f1e5f6cfc9ff65f9cd352d37348756c333"
