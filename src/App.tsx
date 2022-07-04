@@ -1,13 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./App.scoped.scss";
-import Axios from "axios";
+import RouterComponent from "@/router";
 function App() {
-  useEffect(() => {
-    Axios.get("/userList").then((res) => {
-      console.log(res);
-    });
-  });
-  return <div className="App">app</div>;
+  return <RouterComponent />;
 }
 
 export default App;
