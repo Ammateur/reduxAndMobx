@@ -1,16 +1,7 @@
-import React from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
-import IndexPage from "pages/IndexPage/IndexPage";
-import Login from "pages/Login/Login";
-
+import { useRoutes } from "react-router-dom";
+import routes from "@/router/routes";
 const RouterComponent = () => {
-  return (
-    <Routes>
-      <Route path={"/"} element={<Navigate to={"/index"} replace />} />
-      <Route path={"/index"} element={<IndexPage />} />
-      <Route path={"/login"} element={<Login />} />
-    </Routes>
-  );
+  return useRoutes(routes);
 };
 
 export default RouterComponent;
