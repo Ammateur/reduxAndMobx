@@ -28,6 +28,7 @@ module.exports = {
       map: [
         ["@", ["./src"]],
         ["pages", "./src/pages"],
+        ["components", "./src/components"],
       ],
     },
   },
