@@ -4,9 +4,7 @@ import CustomHeader from "components/Header/Header";
 function IndexPage() {
   return (
     <div className={"index-page-wrapper"}>
-      <header className="index-header">
-        <CustomHeader />
-      </header>
+      <CustomHeader />
       <section className="content">
         <div className="content-row">
           <div className="left-area">this is chart</div>

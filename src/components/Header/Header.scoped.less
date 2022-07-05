@@ -1,9 +1,36 @@
-.wrapper {
-  color: red;
-}
-.header {
-  transform: translate(-50%);
-}
-.middle-content {
-  font-size: 12px;
+.header-component-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 20px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  div {
+    cursor: default;
+  }
+  .left {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    .logo {
+      background-image: url("https://images.unsplash.com/photo-1656951858423-b39edaa29fe3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80");
+      background-repeat: no-repeat;
+      width: 100px;
+      height: 40px;
+      background-size: 100% 100%;
+      border-radius: 8px;
+      margin-right: 12px;
+    }
+    .menu-list {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .user-info {
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
